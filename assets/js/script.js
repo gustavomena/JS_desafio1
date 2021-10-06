@@ -93,7 +93,7 @@ document.getElementById("question_4").addEventListener("click", function () {
   if (!isNaN(days)) {
     const years = Math.floor(days / 365);
     const weeks = Math.floor((days - years * 365) / 7);
-    days = days - months * 7 - years * 365;
+    days = days - weeks * 7 - years * 365;
 
     //se arma el string para inyectarlo al html
     let row1 = row;
@@ -101,7 +101,7 @@ document.getElementById("question_4").addEventListener("click", function () {
     row1 = row1.replace("RESULT", years);
     let row2 = row;
     row2 = row2.replace("DESCRIPTION", "semanas");
-    row2 = row2.replace("RESULT", months);
+    row2 = row2.replace("RESULT", weeks);
     let row3 = row;
     row3 = row3.replace("DESCRIPTION", "dias");
     row3 = row3.replace("RESULT", days);
