@@ -118,7 +118,7 @@ document.getElementById("question_5").addEventListener("click", function () {
   let sum = 0; //guarda la suma
   let avg = 0; //guarda el promedio
 
-  for (let index = 1; index < 5; index++) {
+  for (let index = 1; index <= 5; index++) {
     let number = prompt("Ingrese numero " + index, "0");
     if (!isNaN(number)) {
       sum += Number(number);
